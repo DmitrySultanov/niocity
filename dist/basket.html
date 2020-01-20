@@ -1,0 +1,916 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Niocity - Корзина</title>
+	<meta name="viewport" content="width=device-width,minimum-scale=1">
+	<link rel="shortcut icon" href="img/favicon.png">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/libs.min.css">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	<div class="header-wrapper">
+		<header class="header">
+			<div class="header-top container">
+				<div class="header__left">
+					<button type="button" class="menu-btn"><span></span></button>
+					<form action="" class="header-search-form">
+						<input type="text" name="search" placeholder="Поиск в каталоге">
+						<button type="submit"></button>
+					</form>
+					<div class="mobile-header-search-form">
+						<button class="search-btn js-search-btn" type="button"></button>
+						<div class="expanded-search-form">
+							<div class="flex">
+								<button type="button" class="close-btn js-close-btn"></button>
+								<form action="" class="header-search-form">
+									<input type="text" name="search" placeholder="Поиск в каталоге">
+									<button type="submit"></button>
+								</form>
+							</div>
+						</div>
+					</div>
+					<div class="flex">
+						<div class="dropdown-header">
+							<a href="#!" class="dropdown-header__link">О NioCity</a>
+							<ul class="dropdown-header__content">
+								<li><a href="#">Бренд NIO</a></li>
+								<li><a href="#">О производителе</a></li>
+								<li><a href="#">NIO Club</a></li>
+								<li><a href="#">Новости</a></li>
+							</ul>
+						</div>
+						<div class="dropdown-header">
+							<a href="#!" class="dropdown-header__link">Покупателю</a>
+							<ul class="dropdown-header__content">
+								<li><a href="#">Punkt 1</a></li>
+								<li><a href="#">Punkt 2</a></li>
+								<li><a href="#">Punkt 3</a></li>
+							</ul>
+						</div>
+						<a class="location" href="#"><span>Москва</span></a>
+					</div>
+				</div>
+				<div class="header__logo">
+					<a href="/"><img src="img/logo.svg" alt=""/></a>
+				</div>
+				<div class="header__right">
+					<div class="flex">
+						<a class="phone" href="tel:84953432221">8 495 343 22 21</a>
+						<a class="callback popup-up" href="#" data-mfp-src="#callback-popup">Обратный звонок</a>
+					</div>
+					<div class="header-userpanel">
+						<a href="#" class="dashboard"><img src="img/icons/dashboard.svg" alt=""/></a>
+						<a href="#" class=""><img src="img/icons/like.svg" alt=""/></a>
+						<a href="#" class="bag"><img src="img/icons/bag.svg" alt=""/><span class="count">10</span></a>
+					</div>
+				</div>
+			</div>
+			<div class="header-menu">
+				<nav>
+					<div class="nav-item">
+						<a href="#!">СКИДКИ</a>
+						<div class="nav-item__menu">
+							<ul>
+								<li>
+									<p><a href="#">Все средства</a></p>
+									<p><a href="#">Бальзамы и кондиционеры</a></p>
+									<p><a href="#">Маски</a></p>
+								</li>
+								<li>
+									<p><a href="#">Масла и эликсиры</a></p>
+									<p><a href="#">Маски</a></p>
+									<p><a href="#">Шампуни</a></p>
+								</li>
+								<li>
+									<p><a href="#">Масла и эликсиры</a></p>
+									<p><a href="#">Шампуни</a></p>
+								</li>
+								<li>
+									<p><a href="#">Все средства</a></p>
+									<p><a href="#">Бальзамы и кондиционеры</a></p>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="nav-item">
+						<a href="#!">Новинки</a>
+						<div class="nav-item__menu">
+							<ul>
+								<li>
+									<p><a href="#">Все средства</a></p>
+									<p><a href="#">Бальзамы и кондиционеры</a></p>
+								</li>
+								<li>
+									<p><a href="#">Масла и эликсиры</a></p>
+								</li>
+								<li>
+									<p><a href="#">Все средства</a></p>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="nav-item">
+						<a href="#!">Бестселлеры</a>
+						<div class="nav-item__menu">
+							<ul>
+								<li>
+									<p><a href="#">Все средства</a></p>
+									<p><a href="#">Бальзамы и кондиционеры</a></p>
+									<p><a href="#">Маски</a></p>
+								</li>
+								<li>
+									<p><a href="#">Масла и эликсиры</a></p>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="nav-item">
+						<a href="#!">СЕРИЯ NIO</a>
+						<div class="nav-item__menu">
+							<ul>
+								<li>
+									<p><a href="#">Все средства</a></p>
+									<p><a href="#">Бальзамы и кондиционеры</a></p>
+								</li>
+								<li>
+									<p><a href="#">Масла и эликсиры</a></p>
+									<p><a href="#">Шампуни</a></p>
+								</li>
+								<li>
+									<p><a href="#">Масла и эликсиры</a></p>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="nav-item">
+						<a href="#!">Лицо</a>
+						<div class="nav-item__menu">
+							<ul>
+								<li>
+									<p><a href="#">Все средства</a></p>
+									<p><a href="#">Бальзамы и кондиционеры</a></p>
+									<p><a href="#">Маски</a></p>
+								</li>
+								<li>
+									<p><a href="#">Масла и эликсиры</a></p>
+									<p><a href="#">Маски</a></p>
+									<p><a href="#">Шампуни</a></p>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="nav-item">
+						<a href="#!">Тело</a>
+						<div class="nav-item__menu">
+							<ul>
+								<li>
+									<p><a href="#">Все средства</a></p>
+									<p><a href="#">Бальзамы и кондиционеры</a></p>
+									<p><a href="#">Маски</a></p>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="nav-item">
+						<a href="#!">Волосы</a>
+						<div class="nav-item__menu">
+							<ul>
+								<li>
+									<p><a href="#">Все средства</a></p>
+									<p><a href="#">Бальзамы и кондиционеры</a></p>
+									<p><a href="#">Маски</a></p>
+								</li>
+								<li>
+									<p><a href="#">Масла и эликсиры</a></p>
+									<p><a href="#">Шампуни</a></p>
+								</li>
+								<li>
+									<p><a href="#">Масла и эликсиры</a></p>
+								</li>
+								
+							</ul>
+						</div>
+					</div>
+					<div class="nav-item">
+						<a href="#!">Наборы</a>
+						<div class="nav-item__menu">
+							<ul>
+								<li>
+									<p><a href="#">Все средства</a></p>
+									<p><a href="#">Бальзамы и кондиционеры</a></p>
+									<p><a href="#">Маски</a></p>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="nav-item">
+						<a href="#!">комплексы</a>
+						<div class="nav-item__menu">
+							<ul>
+								<li>
+									<p><a href="#">Все средства</a></p>
+									<p><a href="#">Бальзамы и кондиционеры</a></p>
+									<p><a href="#">Маски</a></p>
+								</li>
+								<li>
+									<p><a href="#">Масла и эликсиры</a></p>
+									<p><a href="#">Шампуни</a></p>
+								</li>
+								<li>
+									<p><a href="#">Все средства</a></p>
+									<p><a href="#">Бальзамы и кондиционеры</a></p>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="nav-item">
+						<a href="#!">Акции</a>
+						<div class="nav-item__menu">
+							<ul>
+								<li>
+									<p><a href="#">Все средства</a></p>
+									<p><a href="#">Бальзамы и кондиционеры</a></p>
+									<p><a href="#">Маски</a></p>
+								</li>
+								<li>
+									<p><a href="#">Масла и эликсиры</a></p>
+									<p><a href="#">Маски</a></p>
+									<p><a href="#">Шампуни</a></p>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</nav>
+			</div>
+		</header>
+	</div>
+	
+	<section class="section-inner-title">
+		<div class="container">
+			<div class="breadcrumbs">
+				<a href="#" class="back">Вернуться назад и продолжить покупки</a>
+			</div>
+			<h1>Ваши покупки</h1>
+		</div>
+	</section>
+
+	<section class="section-purchases">
+		<div class="container">
+			<div class="purchases-table">
+				<div class="purchase-row">
+					<div class="purchase-row__elem">
+						<div class="product-ico">
+							<img src="img/products/product1.png" alt=""/>
+						</div>
+					</div>
+					<div class="purchase-row__elem">
+						<div class="product-name">
+							<a href="#">Название продукта NIO CITY 1 Сыворотка</a>
+							<span class="badge">Бестселлер</span>
+						</div>
+						<div class="product-type">Сыворотка</div>
+					</div>
+					<div class="purchase-row__elem">
+						<div class="quantity-counter">
+							<button class="minus" type="button"><img src="img/icons/minus_ico.svg" alt=""/></button>
+							<input type="text" name="product_counter" value="1">
+							<button class="plus" type="button"><img src="img/icons/plus_ico.svg" alt=""/></button>
+						</div>
+					</div>
+					<div class="purchase-row__elem">
+						<div class="price-wrapper">
+							<div class="product-price"><span>3 500</span> <i class="rub">o</i></div>
+						</div>
+					</div>
+					<div class="purchase-row__elem">
+						<div class="product-bonus">
+							<span class="count">412</span> баллов
+							<img class="question" data-toggle="tooltip" data-trigger="click" data-tippy-content="<p>Покупайте продукцию NIO CITY, получайте баллы и тратьте их при покупке новых товаров</p><a href='#''>Подробнее об условиях</a>" src="img/icons/question.svg" alt=""/>
+						</div>
+					</div>
+				</div>
+				<div class="purchase-row">
+					<div class="purchase-row__elem">
+						<div class="product-ico">
+							<img src="img/products/product2.png" alt=""/>
+						</div>
+					</div>
+					<div class="purchase-row__elem">
+						<div class="product-name">
+							<a href="#">Название продукта NIO CITY 2</a>
+						</div>
+						<div class="product-type">Бальзам</div>
+					</div>
+					<div class="purchase-row__elem">
+						<div class="quantity-counter">
+							<button class="minus" type="button"><img src="img/icons/minus_ico.svg" alt=""/></button>
+							<input type="text" name="product_counter" value="1">
+							<button class="plus" type="button"><img src="img/icons/plus_ico.svg" alt=""/></button>
+						</div>
+					</div>
+					<div class="purchase-row__elem">
+						<div class="price-wrapper">
+							<div class="product-price"><span>4 700</span> <i class="rub">o</i></div>
+						</div>
+					</div>
+					<div class="purchase-row__elem">
+						<div class="product-bonus">
+							<span class="count">719</span> баллов
+							<img class="question" data-toggle="tooltip" data-trigger="click" data-tippy-content="<p>Покупайте продукцию NIO CITY, получайте баллы и тратьте их при покупке новых товаров</p><a href='#''>Подробнее об условиях</a>" src="img/icons/question.svg" alt=""/>
+						</div>
+					</div>
+				</div>
+				<div class="purchase-row">
+					<div class="purchase-row__elem">
+						<div class="product-ico">
+							<img src="img/products/product3.png" alt=""/>
+						</div>
+					</div>
+					<div class="purchase-row__elem">
+						<div class="product-name">
+							<a href="#">NIO CITY 3</a>
+							<span class="badge">Скидка</span>
+						</div>
+						<div class="product-type">Увлажняющий крем</div>
+					</div>
+					<div class="purchase-row__elem">
+						<div class="quantity-counter">
+							<button class="minus" type="button"><img src="img/icons/minus_ico.svg" alt=""/></button>
+							<input type="text" name="product_counter" value="3">
+							<button class="plus" type="button"><img src="img/icons/plus_ico.svg" alt=""/></button>
+						</div>
+					</div>
+					<div class="purchase-row__elem">
+						<div class="price-wrapper">
+							<div class="product-old-price"><span>6 600</span> <i class="rub">o</i></div>
+							<div class="product-price"><span>5 400</span> <i class="rub">o</i></div>
+							<div class="product-price__per"><span>1 800</span> <i class="rub">o</i> за 1 товар</div>
+						</div>
+					</div>
+					<div class="purchase-row__elem">
+						<div class="product-bonus">
+							<span class="count">1012</span> баллов
+							<img class="question" data-toggle="tooltip" data-trigger="click" data-tippy-content="<p>Покупайте продукцию NIO CITY, получайте баллы и тратьте их при покупке новых товаров</p><a href='#''>Подробнее об условиях</a>" src="img/icons/question.svg" alt=""/>
+						</div>
+					</div>
+				</div>
+				<div class="purchase-row">
+					<div class="purchase-row__elem">
+						<div class="product-ico">
+							<img src="img/products/product1.png" alt=""/>
+						</div>
+					</div>
+					<div class="purchase-row__elem">
+						<div class="product-name">
+							<a href="#">Название продукта NIO CITY 4</a>
+						</div>
+						<div class="product-type">Сыворотка</div>
+					</div>
+					<div class="purchase-row__elem">
+						<div class="quantity-counter">
+							<button class="minus" type="button"><img src="img/icons/minus_ico.svg" alt=""/></button>
+							<input type="text" name="product_counter" value="2">
+							<button class="plus" type="button"><img src="img/icons/plus_ico.svg" alt=""/></button>
+						</div>
+					</div>
+					<div class="purchase-row__elem">
+						<div class="price-wrapper">
+							<div class="product-price"><span>4 450</span> <i class="rub">o</i></div>
+							<div class="product-price__per"><span>2 250</span> <i class="rub">o</i> за 1 товар</div>
+						</div>
+					</div>
+					<div class="purchase-row__elem">
+						<div class="product-bonus">
+							<span class="count">687</span> баллов
+							<img class="question" data-toggle="tooltip" data-trigger="click" data-tippy-content="<p>Покупайте продукцию NIO CITY, получайте баллы и тратьте их при покупке новых товаров</p><a href='#''>Подробнее об условиях</a>" src="img/icons/question.svg" alt=""/>
+						</div>
+					</div>
+				</div>
+				<div class="purchase-row">
+					<div class="purchase-row__elem">
+						<div class="product-ico">
+							<img src="img/products/sampler_ico1.png" alt=""/>
+						</div>
+					</div>
+					<div class="purchase-row__elem">
+						<div class="product-name">
+							<a href="#">Пробник бальзам для кожи рук</a>
+						</div>
+						<p>Состав: бальзам</p>
+						<p>восстанавливающий  8 мл</p>
+					</div>
+					<div class="purchase-row__elem"></div>
+					<div class="purchase-row__elem">
+						<div class="price-wrapper">
+							<div class="product-price fw300"><span>БЕСПЛАТНО</span></div>
+							<p>Подарок</p>
+						</div>
+					</div>
+					<div class="purchase-row__elem"></div>
+				</div>
+				<div class="purchase-row">
+					<div class="purchase-row__elem">
+						<div class="product-ico">
+							<img src="img/products/sampler_ico3.png" alt=""/>
+						</div>
+					</div>
+					<div class="purchase-row__elem">
+						<div class="product-name">
+							<a href="#">Подарочная упаковка</a>
+						</div>
+					</div>
+					<div class="purchase-row__elem"></div>
+					<div class="purchase-row__elem">
+						<div class="price-wrapper">
+							<div class="product-price fw300"><span>БЕСПЛАТНО</span></div>
+						</div>
+					</div>
+					<div class="purchase-row__elem"></div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<section class="section-special-offers">
+		<div class="container">
+			<h2 class="section-title">
+				Специальные предложения для вас
+				<div class="sub-title">Скидка действует только в корзине</div>
+			</h2>
+			<div class="products-list">
+				<div class="product">
+					<div class="product__ico">
+						<img src="img/products/product1.png" alt=""/>
+					</div>
+					<div class="product__desc">
+						<div class="product-name">
+							<a href="#">Название продукта NIO CITY 1 Крем</a>
+							<span class="badge">Бестселлер</span>
+						</div>
+						<div class="product-type">Сыворотка</div>
+						<div class="product-rating-testimonials">
+	      					<div class="rating">
+	      						<i class="fa fa-star"></i>
+	      						<i class="fa fa-star"></i>
+	      						<i class="fa fa-star"></i>
+	      						<i class="fa fa-star"></i>
+	      						<i class="fa fa-star-o"></i>
+	      					</div>
+	      					<div class="testimonials"><a href="#"><span class="count">34</span><span>отзыва</span></a></div>
+	      				</div>
+	      				<div class="product-price-wrapper">
+	      					<div class="product-price">1 450 <i class="rub">o</i></div>
+	      					<div class="product-old-price">2 700 <i class="rub">o</i></div>
+	      				</div>
+	      				<div class="hidden-container">
+							<div class="flex">
+		      					<button type="button" class="btn btn--redborder">Купить</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="product">
+					<div class="product__ico medium-ico">
+						<img src="img/products/product2.png" alt=""/>
+					</div>
+					<div class="product__desc">
+						<div class="product-name">
+							<a href="#">NIO CITY 2 БАЛЬЗАМ</a>
+						</div>
+						<div class="product-type">Сыворотка</div>
+						<div class="product-rating-testimonials">
+	      					<div class="rating">
+	      						<i class="fa fa-star"></i>
+	      						<i class="fa fa-star"></i>
+	      						<i class="fa fa-star"></i>
+	      						<i class="fa fa-star"></i>
+	      						<i class="fa fa-star-o"></i>
+	      					</div>
+	      					<div class="testimonials"><a href="#"><span class="count">34</span><span>отзыва</span></a></div>
+	      				</div>
+	      				<div class="product-price-wrapper">
+	      					<div class="product-price">3 200 <i class="rub">o</i></div>
+	      				</div>
+	      				<div class="hidden-container">
+							<div class="flex">
+		      					<button type="button" class="btn btn--redborder">Купить</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="product">
+					<div class="product__ico large-ico">
+						<img src="img/products/product3.png" alt=""/>
+					</div>
+					<div class="product__desc">
+						<div class="product-name">
+							<a href="#">Название продукта NIO CITY 1 Крем</a>
+							<span class="badge">Бестселлер</span>
+						</div>
+						<div class="product-type">Сыворотка</div>
+						<div class="product-rating-testimonials">
+	      					<div class="rating">
+	      						<i class="fa fa-star"></i>
+	      						<i class="fa fa-star"></i>
+	      						<i class="fa fa-star"></i>
+	      						<i class="fa fa-star"></i>
+	      						<i class="fa fa-star-o"></i>
+	      					</div>
+	      					<div class="testimonials"><a href="#"><span class="count">34</span><span>отзыва</span></a></div>
+	      				</div>
+	      				<div class="product-price-wrapper">
+	      					<div class="product-price">1 450 <i class="rub">o</i></div>
+	      				</div>
+	      				<div class="hidden-container">
+							<div class="flex">
+		      					<button type="button" class="btn btn--redborder">Купить</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<section class="section-samplers">
+		<div class="container">
+			<h2 class="section-title">
+				бесплатный пробник
+				<div class="sub-title">Выберите один образец в подарок</div>
+			</h2>
+			<div class="products-list">
+				<div class="product">
+					<div class="product__ico">
+						<img src="img/products/sampler_ico1.png" alt=""/>
+					</div>
+					<div class="product__desc">
+						<div class="product-name">
+							<a href="#">Образец NIO Кондиционер волос</a>
+						</div>
+						<p>Состав: Кондиционер</p>
+						<p>Восстанавливающий 6 мл</p>
+						<div class="hidden-container">
+							<div class="flex">
+		      					<button type="button" class="btn btn--redborder">Выбрать</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="product">
+					<div class="product__ico">
+						<img src="img/products/sampler_ico1.png" alt=""/>
+					</div>
+					<div class="product__desc">
+						<div class="product-name">
+							<a href="#">Пробник бальзам для кожи рук</a>
+						</div>
+						<p>Состав: бальзам</p>
+						<p>Восстанавливающий 8 мл</p>
+						<div class="hidden-container">
+							<div class="flex">
+		      					<button type="button" class="btn btn--redborder">Выбрать</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="product">
+					<div class="product__ico">
+						<img src="img/products/sampler_ico2.png" alt=""/>
+					</div>
+					<div class="product__desc">
+						<div class="product-name">
+							<a href="#">Пробник NIO SENSYL для лица</a>
+						</div>
+						<p>Состав: Сыворотка 15 мл</p>
+						<div class="hidden-container">
+							<div class="flex">
+		      					<button type="button" class="btn btn--redborder">Выбрать</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="product">
+					<div class="product__ico">
+						<img src="img/products/sampler_ico1.png" alt=""/>
+					</div>
+					<div class="product__desc">
+						<div class="product-name">
+							<a href="#">Пробник бальзам для кожи рук</a>
+						</div>
+						<p>Состав: Кондиционер</p>
+						<p>Восстанавливающий NIO AXE 8 мл</p>
+						<div class="hidden-container">
+							<div class="flex">
+		      					<button type="button" class="btn btn--redborder">Выбрать</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="section-samplers">
+		<div class="container">
+			<h2 class="section-title">
+				бесплатный пробник
+				<div class="sub-title">Выберите один образец в подарок</div>
+			</h2>
+			<div class="products-list">
+				<div class="product noselected">
+					<div class="product__ico">
+						<img src="img/products/sampler_ico1.png" alt=""/>
+					</div>
+					<div class="product__desc">
+						<div class="product-name">
+							<a href="#">Образец NIO Кондиционер волос</a>
+						</div>
+						<p>Состав: Кондиционер</p>
+						<p>Восстанавливающий 6 мл</p>
+						<div class="hidden-container">
+							<div class="flex">
+		      					<button type="button" class="btn btn--redborder">Выбрать</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="product selected">
+					<div class="product__ico">
+						<img src="img/products/sampler_ico1.png" alt=""/>
+					</div>
+					<div class="product__desc">
+						<div class="product-name">
+							<a href="#">Пробник бальзам для кожи рук</a>
+						</div>
+						<p>Состав: бальзам</p>
+						<p>Восстанавливающий 8 мл</p>
+						<div class="selected">Вы выбрали этот образец</div>
+						<div class="hidden-container">
+							<div class="flex">
+		      					<button type="button" class="btn btn--redborder">Выбрать</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="product noselected">
+					<div class="product__ico">
+						<img src="img/products/sampler_ico2.png" alt=""/>
+					</div>
+					<div class="product__desc">
+						<div class="product-name">
+							<a href="#">Пробник NIO SENSYL для лица</a>
+						</div>
+						<p>Состав: Сыворотка 15 мл</p>
+						<div class="hidden-container">
+							<div class="flex">
+		      					<button type="button" class="btn btn--redborder">Выбрать</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="product noselected">
+					<div class="product__ico">
+						<img src="img/products/sampler_ico1.png" alt=""/>
+					</div>
+					<div class="product__desc">
+						<div class="product-name">
+							<a href="#">Пробник бальзам для кожи рук</a>
+						</div>
+						<p>Состав: Кондиционер</p>
+						<p>Восстанавливающий NIO AXE 8 мл</p>
+						<div class="hidden-container">
+							<div class="flex">
+		      					<button type="button" class="btn btn--redborder">Выбрать</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="section-order-panel">
+		<div class="container">
+			<div class="panel-row">
+				<a href="#" class="back">Вернуться к покупкам</a>
+				<div class="promocode">
+					<span>Чтобы получить скидку, введите промокод:</span>
+					<div class="promocode__input">
+						<input type="text" placeholder="ПРОМОКОД">
+						<button type="submit" class="check"></button>
+					</div>
+				</div>
+				<div class="gift-wrap">
+					<span>Добавить подарочную упаковку?</span>
+					<button type="button" class="btn btn--darkborder btn--sm">Да</button>
+				</div>
+				<div class="order-action">
+					<div class="total-sum">
+						<span>ИТОГО:</span>
+						<span class="total-price"><span>18 050</span> <i class="rub">o</i></span>
+						<span class="total-old-price"><span>19 250</span> <i class="rub">o</i></span>
+					</div>
+					<div class="order-btn">
+						<button type="button" class="btn btn--redbg">Оформить заказ</button>
+						<div class="bonus"><span>2830</span> баллов за покупку <img class="question" data-toggle="tooltip" data-trigger="click" data-tippy-content="<p>Покупайте продукцию NIO CITY, получайте баллы и тратьте их при покупке новых товаров</p><a href='#''>Подробнее об условиях</a>" src="img/icons/question.svg" alt=""/></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="section-order-panel">
+		<div class="container">
+			<div class="panel-row">
+				<a href="#" class="back">Вернуться к покупкам</a>
+				<div class="promocode">
+					<span>Чтобы получить скидку, введите промокод:</span>
+					<div class="promocode__input">
+						<input type="text" placeholder="ПРОМОКОД" value="GF232313DF">
+						<button type="submit" class="clear"></button>
+					</div>
+				</div>
+				<div class="gift-wrap">
+					<span>Добавлена подарочная упаковка</span>
+					<button type="button" class="btn btn--darkborder btn--sm">Убрать</button>
+				</div>
+				<div class="order-action">
+					<div class="total-sum">
+						<span>ИТОГО:</span>
+						<span class="total-price"><span>18 050</span> <i class="rub">o</i></span>
+						<span class="total-old-price"><span>19 250</span> <i class="rub">o</i></span>
+					</div>
+					<div class="order-btn">
+						<button type="button" class="btn btn--redbg">Оформить заказ</button>
+						<div class="bonus"><span>2830</span> баллов за покупку <img class="question" data-toggle="tooltip" data-trigger="click" data-tippy-content="<p>Покупайте продукцию NIO CITY, получайте баллы и тратьте их при покупке новых товаров</p><a href='#''>Подробнее об условиях</a>" src="img/icons/question.svg" alt=""/></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer>
+		<div class="container">
+			<div class="footer-top">
+				<div class="footer-top__left">
+					<ul class="footer-nav-column footer-nav-group">
+						<li class="footer-nav-column__title"><a href="#">КАТАЛОГ</a></li>
+						<li><a href="#">Лицо</a></li>
+						<li><a href="#">Волосы</a></li>
+						<li><a href="#">Тело</a></li>
+						<li><a href="#">Наборы</a></li>
+						<li><a href="#">Комплексы</a></li>
+						<li><a href="#">Скидки</a></li>
+					</ul>
+					<ul class="footer-nav-column footer-nav-group">
+						<li class="footer-nav-column__title"></li>
+						<li><a href="#">Новинки</a></li>
+						<li><a href="#">Бестселлеры</a></li>
+					</ul>
+					<ul class="footer-nav-column">
+						<li class="footer-nav-column__title"><a href="#">Серии</a></li>
+						<li><a href="#">Green</a></li>
+						<li><a href="#">Red</a></li>
+						<li><a href="#">White</a></li>
+						<li><a href="#">Blue</a></li>
+						<li><a href="#">Yellow</a></li>
+						<li><a href="#">Orange</a></li>
+					</ul>
+					<ul class="footer-nav-column">
+						<li class="footer-nav-column__title"><a href="#">ПОКУПАТЕЛЮ</a></li>
+						<li><a href="#">Акции</a></li>
+						<li><a href="#">Доставка и оплата</a></li>
+						<li><a href="#">Обратная связь</a></li>
+						<li><a href="#">Контакты</a></li>
+						<li><a href="#">Статьи</a></li>
+					</ul>
+					<ul class="footer-nav-column">
+						<li class="footer-nav-column__title"><a href="#">О Nio City</a></li>
+						<li><a href="#">Бренд NIO</a></li>
+						<li><a href="#">О производителе</a></li>
+						<li><a href="#">NIO Club</a></li>
+						<li><a href="#">Новости</a></li>
+					</ul>
+				</div>
+				<div class="footer-top__right">
+					<div class="logo-tagline">
+						<img src="img/logo.svg" alt=""/>
+						<span>Косметика NIO CITY – защита от стрессов большого города</span>
+					</div>
+					<p>Узнавайте первыми о новинках и акциях! Подпишитесь на рассылку</p>
+					<form action="" class="footer-subscribe-form">
+						<div class="element">
+							<input type="email" name="email" placeholder="Введите ваш e-mail">
+							<button type="submit"></button>
+						</div>
+					</form>
+					<div class="soc-links">
+						<a href="#"><img src="img/icons/insta_ico.svg" alt=""/></a>
+						<a href="#"><img src="img/icons/vk_ico.svg" alt=""/></a>
+						<a href="#"><img src="img/icons/fb_ico.svg" alt=""/></a>
+					</div>
+				</div>
+			</div>
+			<div class="footer-bottom">
+				<div class="flex">
+					<address>г. Москва, ул. Шоссе Энтузиастов 10, офис 142</address>
+					<a class="link" href="tel:84953432221">8 495 343 22 21</a>
+					<a class="link" href="mailto:hi@nio.city">hi@nio.city</a>
+				</div>
+				<a class="copyright-logo" href="https://iteraciya.ru/" target="_blank"><img src="img/copyright_logo.svg" alt=""/></a>
+				<div class="flex">
+					<span>© 2019 NIO CITY</span>
+					<a href="personal_data_policy.html">Политика конфиденциальности</a>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<div class="pushy pushy-left">
+		<div class="pushy-header">
+			<p><a class="location" href="#"><span>Москва</span></a></p>
+			<p><a class="phone" href="tel:84953432221">8 495 343 22 21</a></p>
+			<p><a class="callback popup-up" href="#" data-mfp-src="#callback-popup">Обратный звонок</a></p>
+		</div>
+		<ul class="pushy-menu">
+			<li>
+				<a href="#!" class="active">КАТАЛОГ</a>
+				<ul class="pushy-submenu">
+					<li><a href="checkout.html">Скидки</a></li>
+					<li><a href="cabinet.html">Лицо</a></li>
+					<li><a href="#">Новинки</a></li>
+					<li><a href="#">Волосы</a></li>
+					<li><a href="#">Бестселлеры</a></li>
+					<li><a href="#">Тело</a></li>
+					<li><a href="#">Наборы</a></li>
+					<li><a href="#">Комплексы</a></li>
+					<li><a href="#">Акции</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="#!">СЕРИИ NIO</a>
+				<ul class="pushy-submenu">
+					<li><a href="#">Скидки</a></li>
+					<li><a href="#">Лицо</a></li>
+					<li><a href="#">Новинки</a></li>
+					<li><a href="#">Волосы</a></li>
+					<li><a href="#">Бестселлеры</a></li>
+					<li><a href="#">Тело</a></li>
+					<li><a href="#">Наборы</a></li>
+					<li><a href="#">Комплексы</a></li>
+					<li><a href="#">Акции</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="#!">ПОКУПАТЕЛЮ</a>
+				<ul class="pushy-submenu">
+					<li><a href="#">Скидки</a></li>
+					<li><a href="#">Лицо</a></li>
+					<li><a href="#">Новинки</a></li>
+					<li><a href="#">Волосы</a></li>
+					<li><a href="#">Бестселлеры</a></li>
+					<li><a href="#">Тело</a></li>
+					<li><a href="#">Наборы</a></li>
+					<li><a href="#">Комплексы</a></li>
+					<li><a href="#">Акции</a></li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+	<div class="site-overlay"><i class="close-ico"></i></div>
+
+	<div id="callback-popup" class="zoom-anim-dialog mfp-hide popup callback-popup">
+		<div class="flex flex-center">
+			<h2 class="popup-title ttu darkcolor">Обратный звонок</h2>
+			<form action="" class="form js-form-validate">
+				<div class="form-column">
+					<div class="element">
+						<p>Имя</p>
+						<input type="text" name="name">
+					</div>
+					<div class="element">
+						<p>Телефон</p>
+						<input type="text" name="phone" class="phone">
+					</div>
+					<button type="submit" class="btn btn--redborder">Перезвоните мне</button>
+					<div class="element checkbox confirm">
+						<label>
+							<input type="checkbox" name="confirm" checked><i></i>
+							<span>Согласие на обработку персональных данных</span>
+						</label>
+					</div>
+				</div>
+			</form>
+			<div class="form-success js-form-success">
+				<h2 class="popup-title">Заявка отправлена!</h2>
+				<p>Команда NIO CITY свяжется с вами в ближайшее время</p>
+			</div>
+		</div>
+	</div>
+
+	<script src="js/libs.min.js"></script>
+	<script src="js/common.js"></script>
+</body>
+</html>

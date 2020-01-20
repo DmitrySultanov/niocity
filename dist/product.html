@@ -1,0 +1,946 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Niocity - Страница товара</title>
+	<meta name="viewport" content="width=device-width,minimum-scale=1">
+	<link rel="shortcut icon" href="img/favicon.png">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/libs.min.css">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	<div class="header-wrapper">
+		<header class="header">
+			<div class="header-top container">
+				<div class="header__left">
+					<button type="button" class="menu-btn"><span></span></button>
+					<form action="" class="header-search-form">
+						<input type="text" name="search" placeholder="Поиск в каталоге">
+						<button type="submit"></button>
+					</form>
+					<div class="mobile-header-search-form">
+						<button class="search-btn js-search-btn" type="button"></button>
+						<div class="expanded-search-form">
+							<div class="flex">
+								<button type="button" class="close-btn js-close-btn"></button>
+								<form action="" class="header-search-form">
+									<input type="text" name="search" placeholder="Поиск в каталоге">
+									<button type="submit"></button>
+								</form>
+							</div>
+						</div>
+					</div>
+					<div class="flex">
+						<div class="dropdown-header">
+							<a href="#!" class="dropdown-header__link">О NioCity</a>
+							<ul class="dropdown-header__content">
+								<li><a href="#">Бренд NIO</a></li>
+								<li><a href="#">О производителе</a></li>
+								<li><a href="#">NIO Club</a></li>
+								<li><a href="#">Новости</a></li>
+							</ul>
+						</div>
+						<div class="dropdown-header">
+							<a href="#!" class="dropdown-header__link">Покупателю</a>
+							<ul class="dropdown-header__content">
+								<li><a href="#">Punkt 1</a></li>
+								<li><a href="#">Punkt 2</a></li>
+								<li><a href="#">Punkt 3</a></li>
+							</ul>
+						</div>
+						<a class="location" href="#"><span>Москва</span></a>
+					</div>
+				</div>
+				<div class="header__logo">
+					<a href="/"><img src="img/logo.svg" alt=""/></a>
+				</div>
+				<div class="header__right">
+					<div class="flex">
+						<a class="phone" href="tel:84953432221">8 495 343 22 21</a>
+						<a class="callback popup-up" href="#" data-mfp-src="#callback-popup">Обратный звонок</a>
+					</div>
+					<div class="header-userpanel">
+						<a href="#" class="dashboard"><img src="img/icons/dashboard.svg" alt=""/></a>
+						<a href="#" class=""><img src="img/icons/like.svg" alt=""/></a>
+						<a href="#" class="bag"><img src="img/icons/bag.svg" alt=""/><span class="count">10</span></a>
+					</div>
+				</div>
+			</div>
+			<div class="header-menu">
+				<nav>
+					<div class="nav-item">
+						<a href="#!">СКИДКИ</a>
+						<div class="nav-item__menu">
+							<ul>
+								<li>
+									<p><a href="#">Все средства</a></p>
+									<p><a href="#">Бальзамы и кондиционеры</a></p>
+									<p><a href="#">Маски</a></p>
+								</li>
+								<li>
+									<p><a href="#">Масла и эликсиры</a></p>
+									<p><a href="#">Маски</a></p>
+									<p><a href="#">Шампуни</a></p>
+								</li>
+								<li>
+									<p><a href="#">Масла и эликсиры</a></p>
+									<p><a href="#">Шампуни</a></p>
+								</li>
+								<li>
+									<p><a href="#">Все средства</a></p>
+									<p><a href="#">Бальзамы и кондиционеры</a></p>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="nav-item">
+						<a href="#!">Новинки</a>
+						<div class="nav-item__menu">
+							<ul>
+								<li>
+									<p><a href="#">Все средства</a></p>
+									<p><a href="#">Бальзамы и кондиционеры</a></p>
+								</li>
+								<li>
+									<p><a href="#">Масла и эликсиры</a></p>
+								</li>
+								<li>
+									<p><a href="#">Все средства</a></p>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="nav-item">
+						<a href="#!">Бестселлеры</a>
+						<div class="nav-item__menu">
+							<ul>
+								<li>
+									<p><a href="#">Все средства</a></p>
+									<p><a href="#">Бальзамы и кондиционеры</a></p>
+									<p><a href="#">Маски</a></p>
+								</li>
+								<li>
+									<p><a href="#">Масла и эликсиры</a></p>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="nav-item">
+						<a href="#!">СЕРИЯ NIO</a>
+						<div class="nav-item__menu">
+							<ul>
+								<li>
+									<p><a href="#">Все средства</a></p>
+									<p><a href="#">Бальзамы и кондиционеры</a></p>
+								</li>
+								<li>
+									<p><a href="#">Масла и эликсиры</a></p>
+									<p><a href="#">Шампуни</a></p>
+								</li>
+								<li>
+									<p><a href="#">Масла и эликсиры</a></p>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="nav-item">
+						<a href="#!">Лицо</a>
+						<div class="nav-item__menu">
+							<ul>
+								<li>
+									<p><a href="#">Все средства</a></p>
+									<p><a href="#">Бальзамы и кондиционеры</a></p>
+									<p><a href="#">Маски</a></p>
+								</li>
+								<li>
+									<p><a href="#">Масла и эликсиры</a></p>
+									<p><a href="#">Маски</a></p>
+									<p><a href="#">Шампуни</a></p>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="nav-item">
+						<a href="#!">Тело</a>
+						<div class="nav-item__menu">
+							<ul>
+								<li>
+									<p><a href="#">Все средства</a></p>
+									<p><a href="#">Бальзамы и кондиционеры</a></p>
+									<p><a href="#">Маски</a></p>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="nav-item">
+						<a href="#!">Волосы</a>
+						<div class="nav-item__menu">
+							<ul>
+								<li>
+									<p><a href="#">Все средства</a></p>
+									<p><a href="#">Бальзамы и кондиционеры</a></p>
+									<p><a href="#">Маски</a></p>
+								</li>
+								<li>
+									<p><a href="#">Масла и эликсиры</a></p>
+									<p><a href="#">Шампуни</a></p>
+								</li>
+								<li>
+									<p><a href="#">Масла и эликсиры</a></p>
+								</li>
+								
+							</ul>
+						</div>
+					</div>
+					<div class="nav-item">
+						<a href="#!">Наборы</a>
+						<div class="nav-item__menu">
+							<ul>
+								<li>
+									<p><a href="#">Все средства</a></p>
+									<p><a href="#">Бальзамы и кондиционеры</a></p>
+									<p><a href="#">Маски</a></p>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="nav-item">
+						<a href="#!">комплексы</a>
+						<div class="nav-item__menu">
+							<ul>
+								<li>
+									<p><a href="#">Все средства</a></p>
+									<p><a href="#">Бальзамы и кондиционеры</a></p>
+									<p><a href="#">Маски</a></p>
+								</li>
+								<li>
+									<p><a href="#">Масла и эликсиры</a></p>
+									<p><a href="#">Шампуни</a></p>
+								</li>
+								<li>
+									<p><a href="#">Все средства</a></p>
+									<p><a href="#">Бальзамы и кондиционеры</a></p>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="nav-item">
+						<a href="#!">Акции</a>
+						<div class="nav-item__menu">
+							<ul>
+								<li>
+									<p><a href="#">Все средства</a></p>
+									<p><a href="#">Бальзамы и кондиционеры</a></p>
+									<p><a href="#">Маски</a></p>
+								</li>
+								<li>
+									<p><a href="#">Масла и эликсиры</a></p>
+									<p><a href="#">Маски</a></p>
+									<p><a href="#">Шампуни</a></p>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</nav>
+			</div>
+		</header>
+	</div> 
+	
+	<section class="section-inner-title">
+		<div class="container">
+			<div class="breadcrumbs">
+				<a href="#">NIO CITY</a>
+				<a href="#">Лицо</a>
+				<a href="#">Название продукта NIO CITY 1</a>
+			</div>
+		</div>
+	</section>
+	
+	<section class="section-product-main">
+		<div class="container">
+			<div class="product-main">
+				<div class="product-main__about">
+					<h1 class="product-name">Название продукта NIO CITY 1 <span class="badge">Новинка</span></h1>
+					<div class="product-info">
+						<div class="product-type">Сыворотка</div>
+						<div class="product-code">Артикул: <span>453704</span></div>
+					</div>
+					<p>Ниосомальный комплекс NIO SENSYL - Сбалансированная энергетическая матрица, созданная специально для ухода за чувствительной кожей и повышает ее иммунный статус.</p>
+					<div class="product-rating-testimonials">
+      					<div class="rating">
+      						<i class="fa fa-star"></i>
+      						<i class="fa fa-star"></i>
+      						<i class="fa fa-star"></i>
+      						<i class="fa fa-star"></i>
+      						<i class="fa fa-star-o"></i>
+      					</div>
+      					<div class="testimonials"><a href="#"><span class="count">34</span><span>отзыва</span></a></div>
+      				</div>
+				</div>
+				<div class="product-main__slider">
+					<ul class="slider-for">
+						<li>
+							<img class="zoom" src="img/products/product2.png" alt="" data-big="img/products/product2-large.png" data-big2x="" />
+						</li>
+						<li>
+							<img class="zoom" src="img/products/product3.png" alt="" data-big="img/products/product3-large.png" data-big2x="" />
+						</li>
+						<li>
+							<img class="zoom" src="img/products/product2.png" alt="" data-big="img/products/product2-large.png" data-big2x="" />
+						</li>
+						<li>
+							<img class="zoom" src="img/products/product3.png" alt="" data-big="img/products/product3-large.png" data-big2x="" />
+						</li>
+					</ul>
+					<ul class="slider-nav">
+						<li><img src="img/products/product2.png" alt=""/></li>
+						<li><img src="img/products/product3.png" alt=""/></li>
+						<li><img src="img/products/product2.png" alt=""/></li>
+						<li><img src="img/products/product3.png" alt=""/></li>
+					</ul>
+				</div>
+				<div class="product-main__action">
+					<div class="product-price">3 500 ₽</div>
+					<div class="product-bonus">
+						<span class="count">350</span> баллов за покупку 
+						<img class="question" data-toggle="tooltip" data-trigger="click" data-tippy-content="<p>Покупайте продукцию NIO CITY, получайте баллы и тратьте их при покупке новых товаров</p><a href='#''>Подробнее об условиях</a>" src="img/icons/question.svg" alt=""/>
+					</div>
+					<div class="product-status available">
+						<div><span>В наличии</span></div>
+					</div>
+					<div class="product-tabs">
+						<span class="tab active">30 мл</span>
+						<span class="tab">50 мл</span>
+						<span class="tab">70 мл</span>
+						<span class="tab">120 мл</span>
+					</div>
+					<div class="product-btns">
+						<button type="button" class="btn btn--redborder">В корзину</button>
+						<div class="quantity-counter">
+							<button class="minus" type="button"><img src="img/icons/minus_ico.svg" alt=""/></button>
+							<input type="text" name="product_counter" value="1">
+							<button class="plus" type="button"><img src="img/icons/plus_ico.svg" alt=""/></button>
+						</div>
+					</div>
+					<div class="product-links">
+						<a href="#" class="favorites"></a>
+						<a href="#" class="share popup-up" data-mfp-src="#share-popup"></a>
+					</div>
+					<div class="product-delivery">
+						<a href="#" class="delivery popup-up" data-mfp-src="#delivery-popup">Условия доставки и оплаты</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="section-product-desc">
+		<div class="product-desc-wrapper">
+			<div class="product-desc-ico">
+				<img src="img/products/product_bg1.jpg" alt=""/>
+			</div>
+			<div class="product-desc-txt entry">
+				<p>NIOSOME - NIO-OLIGO HA – инновационная система для уменьшения морщин посредством повышения вязкоупругих свойств кожи. Активно выводит из клеток токсины, обладает тонизирующим и противоаллергическим действием на кожу.  Фитоцерамиды риса защищают эпидермис от внешних факторов. Природный флавоноид Kaempherol (эффективный ингибитор гиалуронидазы) из бутонов  индийской опунции служит капилляропротектором. Троксерутин из японского дерева пагод усиливает микроциркуляцию, повышает эластичность кожи.</p>
+				<div class="spacerX2"></div>
+				<p>Однако, поверхность кожи, особенно в условиях жизни в городе, постоянно подвергается воздействию вредных внешних факторов, как климатических, так и различных загрязнений.</p>
+				<div class="spacerX5"></div>
+				<div class="columns">
+					<div class="column column--half">
+						<p><strong>Способ применения</strong></p>
+						<p>Нанесите на кожу лица легкими поглаживающими движениями. Помассируйте шею снизу вверх, затем перейдите к лицу и лбу, двигаясь от центра в стороны. Избегайте зоны вокруг глаз.</p>
+					</div>
+					<div class="column column--half">
+						<p><strong>Активные компоненты</strong></p>
+						<p>Purisoft, PatcH2O, Hyalurosmooth, Resveratrol, STIMU-TEX AS, Neurobiox</p>
+					</div>
+				</div>
+				<div class="spacerX5"></div>
+				<h4>Серия NIO RED</h4>
+				<p>Ниосомальные комплексы NIO Active – Революционный ревитализирующий и регенерирующий биокомплекс, созданный специально для восстановления усталой, тусклой и чувствительной кожи. Ускоряет процесс обмена веществ, запускает механизм регенерации клеток.</p>
+				<p><a href="#">Смотреть другие продукты NIO RED</a></p>
+			</div>
+		</div>
+	</section>
+
+	<section class="section-testimonials">
+		<div class="container">
+			<h2 class="section-title">ОТЗЫВЫ</h2>
+			<div class="testimonials-list js-testimonials-list">
+				<div class="testimonial">
+					<div class="testimonial__header">
+						<div class="testimonial-rating">
+      						<i class="fa fa-star"></i>
+      						<i class="fa fa-star"></i>
+      						<i class="fa fa-star"></i>
+      						<i class="fa fa-star"></i>
+      						<i class="fa fa-star-o"></i>
+						</div>
+						<div class="testimonial-name">Марина</div>
+					</div>
+					<div class="testimonial__body">
+						<p>Сыворотка идеальна . Аромат текстура эффект все прекрасно! Выглядит кожа утром буквально сияющей, порекомендую друзяьм</p>
+					</div>
+					<div class="testimonial__footer">
+						<a href="#" class="like"></a>
+						<span class="testimonial-date">19 ноября 2019</span>
+					</div>
+				</div>
+				<div class="testimonial">
+					<div class="testimonial__header">
+						<div class="testimonial-rating">
+      						<i class="fa fa-star"></i>
+      						<i class="fa fa-star"></i>
+      						<i class="fa fa-star"></i>
+      						<i class="fa fa-star"></i>
+      						<i class="fa fa-star"></i>
+						</div>
+						<div class="testimonial-name">Ксения</div>
+					</div>
+					<div class="testimonial__body">
+						<p>Эффект действительно заметен после постоянного применения. Использовала примерно половину емкости, наношу на ночь перед кремом.  емкости, наношу на ночь перед кремом.</p>
+					</div>
+					<div class="testimonial__footer">
+						<a href="#" class="like"></a>
+						<span class="testimonial-date">19 ноября 2019</span>
+					</div>
+				</div>
+				<div class="testimonial">
+					<div class="testimonial__header">
+						<div class="testimonial-rating">
+      						<i class="fa fa-star"></i>
+      						<i class="fa fa-star"></i>
+      						<i class="fa fa-star"></i>
+      						<i class="fa fa-star"></i>
+      						<i class="fa fa-star-half-o"></i>
+						</div>
+						<div class="testimonial-name">Анна</div>
+					</div>
+					<div class="testimonial__body">
+						<p>Купила не использовав до этого пробника. Сыворотка мне понравилась, единственный минус))), быстро закончился. Я использовала для нанесения на все лицо 3 нажатия-капли, Когда поняла, что быстро заканчивается попробовала нажимать два раза, но мне показалось суховато , лицо просит еще)). Использовала в паре с кремом Иммортель, очень здорово, как обычно чудесный запах, кожа увлажненная и выглядит отлично. Использовала утром и вечером. Жидкая составляющая эликсира закончилась быстрее чем пушистые шарики-маслица)), оставшуюся часть пушинок, наносила путем откручивания пробки и непосредственно частью от дозатора. Эликсир великолепный, ощущение гладкости, увлажнения, на мой взгляд кожа выглядела лучше чем до использования средства. Буду покупать еще. </p>
+					</div>
+					<div class="testimonial__footer">
+						<a href="#" class="like"></a>
+						<span class="testimonial-date">19 ноября 2019</span>
+					</div>
+				</div>
+				<div class="testimonial">
+					<div class="testimonial__header">
+						<div class="testimonial-rating">
+      						<i class="fa fa-star"></i>
+      						<i class="fa fa-star"></i>
+      						<i class="fa fa-star"></i>
+      						<i class="fa fa-star"></i>
+      						<i class="fa fa-star"></i>
+						</div>
+						<div class="testimonial-name">Наталья</div>
+					</div>
+					<div class="testimonial__body">
+						<p>Попробовала вначале в мини-формате, понравилось так, что купила полновесный вариант. Пользуюсь на ночь, и уже ничего больше не добавляю. Волшебный запах, легкое распределение, ощущение комфорта на лице. Лет мне не 18 уже давно, но крем реально помогает коже. Я после него уже ничего сверху не укладываю, для меня и питания, и увлажнения на ночь вполне хватает. </p>
+					</div>
+					<div class="testimonial__footer">
+						<a href="#" class="like"></a>
+						<span class="testimonial-date">19 ноября 2019</span>
+					</div>
+				</div>
+				<div class="testimonial">
+					<div class="testimonial__header">
+						<div class="testimonial-rating">
+      						<i class="fa fa-star"></i>
+      						<i class="fa fa-star"></i>
+      						<i class="fa fa-star"></i>
+      						<i class="fa fa-star-half-o"></i>
+      						<i class="fa fa-star-o"></i>
+						</div>
+						<div class="testimonial-name">Евгения</div>
+					</div>
+					<div class="testimonial__body">
+						<p>Обалденный запах. Пока пробовала только в пробниках и в миниатюрке, но засматриваюсь на полноразмер. Жаль, цена кусачая. Но он того стоит однозначно. В дополнение к своим качествам он еще и красиво представлен.</p>
+					</div>
+					<div class="testimonial__footer">
+						<a href="#" class="like"></a>
+						<span class="testimonial-date">19 ноября 2019</span>
+					</div>
+				</div>
+				<div class="testimonial">
+					<div class="testimonial__header">
+						<div class="testimonial-rating">
+      						<i class="fa fa-star"></i>
+      						<i class="fa fa-star"></i>
+      						<i class="fa fa-star"></i>
+      						<i class="fa fa-star"></i>
+      						<i class="fa fa-star"></i>
+						</div>
+						<div class="testimonial-name">Елизавета</div>
+					</div>
+					<div class="testimonial__body">
+						<p>Эффект действительно заметен после постоянного применения. Использовала примерно половину емкости, наношу на ночь перед кремом.</p>
+					</div>
+					<div class="testimonial__footer">
+						<a href="#" class="like"></a>
+						<span class="testimonial-date">19 ноября 2019</span>
+					</div>
+				</div>
+				<div class="testimonial">
+					<div class="testimonial__header">
+						<div class="testimonial-rating">
+      						<i class="fa fa-star"></i>
+      						<i class="fa fa-star"></i>
+      						<i class="fa fa-star"></i>
+      						<i class="fa fa-star"></i>
+      						<i class="fa fa-star"></i>
+						</div>
+						<div class="testimonial-name">Марина</div>
+					</div>
+					<div class="testimonial__body">
+						<p>Сыворотка идеальна . Аромат текстура эффект все прекрасно! Выглядит кожа утром буквально сияющей, порекомендую друзяьм</p>
+					</div>
+					<div class="testimonial__footer">
+						<a href="#" class="like"></a>
+						<span class="testimonial-date">19 ноября 2019</span>
+					</div>
+				</div>
+			</div>
+			<div class="buttons-container">
+				<button type="button" class="btn btn--dark">Показать ещё</button>
+				<button type="button" class="btn btn--darkborder popup-up" data-mfp-src="#testimonial-popup-no-reg">Оставить отзыв</button>
+				<button type="button" class="btn btn--darkborder popup-up" data-mfp-src="#testimonial-popup-reg">Оставить отзыв</button>
+			</div>
+		</div>
+	</section>
+
+	<section class="section-products-slider products-list section--padtop">
+		<div class="container">
+			<h2 class="section-title">ПОХОЖИЕ ТОВАРЫ</h2>
+
+			<div class="swiper-container">
+			    <div class="swiper-wrapper">
+			      	<div class="swiper-slide">
+			      		<div class="product">
+			      			<div class="product__ico">
+			      				<img src="img/products/product1.png" alt=""/>
+			      			</div>
+			      			<div class="product__desc">
+			      				<div class="product-name"><a href="#">Название продукта NIO CITY 1</a></div>
+			      				<div class="product-category">Сыворотка</div>
+			      				<div class="product-rating-testimonials">
+			      					<div class="rating">
+			      						<i class="fa fa-star"></i>
+			      						<i class="fa fa-star"></i>
+			      						<i class="fa fa-star"></i>
+			      						<i class="fa fa-star"></i>
+			      						<i class="fa fa-star-o"></i>
+			      					</div>
+			      					<div class="testimonials"><a href="#"><span class="count">34</span><span>отзыва</span></a></div>
+			      				</div>
+			      				<div class="product-price">3 500 <i class="rub">o</i></div>
+			      				<div class="hidden-container">
+									<div class="flex">
+				      					<button type="button" class="btn btn--redborder">Купить</button>
+									</div>
+									<div class="flex">
+										<a href="#" class="favorites"></a>
+									</div>
+								</div>
+			      			</div>
+			      		</div>
+			      	</div>
+			      	<div class="swiper-slide">
+			      		<div class="product">
+			      			<div class="product__ico">
+			      				<img src="img/products/product2.png" alt=""/>
+			      			</div>
+			      			<div class="product__desc">
+			      				<div class="product-name"><a href="#">Название продукта NIO CITY 2</a></div>
+			      				<div class="product-category">Бальзам</div>
+			      				<div class="product-rating-testimonials">
+			      					<div class="rating">
+			      						<i class="fa fa-star"></i>
+			      						<i class="fa fa-star"></i>
+			      						<i class="fa fa-star"></i>
+			      						<i class="fa fa-star"></i>
+			      						<i class="fa fa-star-half-o"></i>
+			      					</div>
+			      					<div class="testimonials"><a href="#"><span class="count">34</span><span>отзыва</span></a></div>
+			      				</div>
+			      				<div class="product-price">4 700 <i class="rub">o</i></div>
+			      				<div class="hidden-container">
+									<div class="flex">
+				      					<button type="button" class="btn btn--redborder">Купить</button>
+									</div>
+									<div class="flex">
+										<a href="#" class="favorites"></a>
+									</div>
+								</div>
+			      			</div>
+			      		</div>
+			      	</div>
+			      	<div class="swiper-slide">
+			      		<div class="product">
+			      			<div class="product__ico">
+			      				<img src="img/products/product3.png" alt=""/>
+			      			</div>
+			      			<div class="product__desc">
+			      				<div class="product-name"><a href="#">Название продукта NIO CITY 3</a></div>
+			      				<div class="product-category">Увлажняющий крем</div>
+			      				<div class="product-rating-testimonials">
+			      					<div class="rating">
+			      						<i class="fa fa-star"></i>
+			      						<i class="fa fa-star"></i>
+			      						<i class="fa fa-star"></i>
+			      						<i class="fa fa-star"></i>
+			      						<i class="fa fa-star"></i>
+			      					</div>
+			      					<div class="testimonials"><a href="#"><span class="count">19</span><span>отзыва</span></a></div>
+			      				</div>
+			      				<div class="product-price">2 200 <i class="rub">o</i></div>
+			      				<div class="hidden-container">
+									<div class="flex">
+				      					<button type="button" class="btn btn--redborder">Купить</button>
+									</div>
+									<div class="flex">
+										<a href="#" class="favorites"></a>
+									</div>
+								</div>
+			      			</div>
+			      		</div>
+			      	</div>
+			    </div>
+			</div>
+		</div>
+	    <div class="swiper-navigation">
+		    <div class="swiper-button-prev"></div>
+	    	<div class="swiper-button-next"></div>
+	    </div>
+	</section>
+
+	<section class="section-products-slider products-list">
+		<div class="container">
+			<h2 class="section-title">Другие товары из  серии NIOred</h2>
+
+			<div class="swiper-container">
+			    <div class="swiper-wrapper">
+			      	<div class="swiper-slide">
+			      		<div class="product">
+			      			<div class="product__ico">
+			      				<img src="img/products/product1.png" alt=""/>
+			      			</div>
+			      			<div class="product__desc">
+			      				<div class="product-name"><a href="#">Название продукта NIO CITY 1</a></div>
+			      				<div class="product-category">Сыворотка</div>
+			      				<div class="product-rating-testimonials">
+			      					<div class="rating">
+			      						<i class="fa fa-star"></i>
+			      						<i class="fa fa-star"></i>
+			      						<i class="fa fa-star"></i>
+			      						<i class="fa fa-star"></i>
+			      						<i class="fa fa-star-o"></i>
+			      					</div>
+			      					<div class="testimonials"><a href="#"><span class="count">34</span><span>отзыва</span></a></div>
+			      				</div>
+			      				<div class="product-price">3 500 <i class="rub">o</i></div>
+			      				<div class="hidden-container">
+									<div class="flex">
+				      					<button type="button" class="btn btn--redborder">Купить</button>
+									</div>
+									<div class="flex">
+										<a href="#" class="favorites"></a>
+									</div>
+								</div>
+			      			</div>
+			      		</div>
+			      	</div>
+			      	<div class="swiper-slide">
+			      		<div class="product">
+			      			<div class="product__ico">
+			      				<img src="img/products/product2.png" alt=""/>
+			      			</div>
+			      			<div class="product__desc">
+			      				<div class="product-name"><a href="#">Название продукта NIO CITY 2</a></div>
+			      				<div class="product-category">Бальзам</div>
+			      				<div class="product-rating-testimonials">
+			      					<div class="rating">
+			      						<i class="fa fa-star"></i>
+			      						<i class="fa fa-star"></i>
+			      						<i class="fa fa-star"></i>
+			      						<i class="fa fa-star"></i>
+			      						<i class="fa fa-star-half-o"></i>
+			      					</div>
+			      					<div class="testimonials"><a href="#"><span class="count">34</span><span>отзыва</span></a></div>
+			      				</div>
+			      				<div class="product-price">4 700 <i class="rub">o</i></div>
+			      				<div class="hidden-container">
+									<div class="flex">
+				      					<button type="button" class="btn btn--redborder">Купить</button>
+									</div>
+									<div class="flex">
+										<a href="#" class="favorites"></a>
+									</div>
+								</div>
+			      			</div>
+			      		</div>
+			      	</div>
+			      	<div class="swiper-slide">
+			      		<div class="product">
+			      			<div class="product__ico">
+			      				<img src="img/products/product3.png" alt=""/>
+			      			</div>
+			      			<div class="product__desc">
+			      				<div class="product-name"><a href="#">Название продукта NIO CITY 3</a></div>
+			      				<div class="product-category">Увлажняющий крем</div>
+			      				<div class="product-rating-testimonials">
+			      					<div class="rating">
+			      						<i class="fa fa-star"></i>
+			      						<i class="fa fa-star"></i>
+			      						<i class="fa fa-star"></i>
+			      						<i class="fa fa-star"></i>
+			      						<i class="fa fa-star"></i>
+			      					</div>
+			      					<div class="testimonials"><a href="#"><span class="count">19</span><span>отзыва</span></a></div>
+			      				</div>
+			      				<div class="product-price">2 200 <i class="rub">o</i></div>
+			      				<div class="hidden-container">
+									<div class="flex">
+				      					<button type="button" class="btn btn--redborder">Купить</button>
+									</div>
+									<div class="flex">
+										<a href="#" class="favorites"></a>
+									</div>
+								</div>
+			      			</div>
+			      		</div>
+			      	</div>
+			    </div>
+			</div>
+		</div>
+	    <div class="swiper-navigation">
+		    <div class="swiper-button-prev"></div>
+	    	<div class="swiper-button-next"></div>
+	    </div>
+	</section>
+
+	<footer>
+		<div class="container">
+			<div class="footer-top">
+				<div class="footer-top__left">
+					<ul class="footer-nav-column footer-nav-group">
+						<li class="footer-nav-column__title"><a href="#">КАТАЛОГ</a></li>
+						<li><a href="#">Лицо</a></li>
+						<li><a href="#">Волосы</a></li>
+						<li><a href="#">Тело</a></li>
+						<li><a href="#">Наборы</a></li>
+						<li><a href="#">Комплексы</a></li>
+						<li><a href="#">Скидки</a></li>
+					</ul>
+					<ul class="footer-nav-column footer-nav-group">
+						<li class="footer-nav-column__title"></li>
+						<li><a href="#">Новинки</a></li>
+						<li><a href="#">Бестселлеры</a></li>
+					</ul>
+					<ul class="footer-nav-column">
+						<li class="footer-nav-column__title"><a href="#">Серии</a></li>
+						<li><a href="#">Green</a></li>
+						<li><a href="#">Red</a></li>
+						<li><a href="#">White</a></li>
+						<li><a href="#">Blue</a></li>
+						<li><a href="#">Yellow</a></li>
+						<li><a href="#">Orange</a></li>
+					</ul>
+					<ul class="footer-nav-column">
+						<li class="footer-nav-column__title"><a href="#">ПОКУПАТЕЛЮ</a></li>
+						<li><a href="#">Акции</a></li>
+						<li><a href="#">Доставка и оплата</a></li>
+						<li><a href="#">Обратная связь</a></li>
+						<li><a href="#">Контакты</a></li>
+						<li><a href="#">Статьи</a></li>
+					</ul>
+					<ul class="footer-nav-column">
+						<li class="footer-nav-column__title"><a href="#">О Nio City</a></li>
+						<li><a href="#">Бренд NIO</a></li>
+						<li><a href="#">О производителе</a></li>
+						<li><a href="#">NIO Club</a></li>
+						<li><a href="#">Новости</a></li>
+					</ul>
+				</div>
+				<div class="footer-top__right">
+					<div class="logo-tagline">
+						<img src="img/logo.svg" alt=""/>
+						<span>Косметика NIO CITY – защита от стрессов большого города</span>
+					</div>
+					<p>Узнавайте первыми о новинках и акциях! Подпишитесь на рассылку</p>
+					<form action="" class="footer-subscribe-form">
+						<div class="element">
+							<input type="email" name="email" placeholder="Введите ваш e-mail">
+							<button type="submit"></button>
+						</div>
+					</form>
+					<div class="soc-links">
+						<a href="#"><img src="img/icons/insta_ico.svg" alt=""/></a>
+						<a href="#"><img src="img/icons/vk_ico.svg" alt=""/></a>
+						<a href="#"><img src="img/icons/fb_ico.svg" alt=""/></a>
+					</div>
+				</div>
+			</div>
+			<div class="footer-bottom">
+				<div class="flex">
+					<address>г. Москва, ул. Шоссе Энтузиастов 10, офис 142</address>
+					<a class="link" href="tel:84953432221">8 495 343 22 21</a>
+					<a class="link" href="mailto:hi@nio.city">hi@nio.city</a>
+				</div>
+				<a class="copyright-logo" href="https://iteraciya.ru" target="_blank"><img src="img/copyright_logo.svg" alt=""/></a>
+				<div class="flex">
+					<span>© 2019 NIO CITY</span>
+					<a href="personal_data_policy.html">Политика конфиденциальности</a>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<div class="pushy pushy-left">
+		<div class="pushy-header">
+			<p><a class="location" href="#"><span>Москва</span></a></p>
+			<p><a class="phone" href="tel:84953432221">8 495 343 22 21</a></p>
+			<p><a class="callback popup-up" href="#" data-mfp-src="#callback-popup">Обратный звонок</a></p>
+		</div>
+		<ul class="pushy-menu">
+			<li>
+				<a href="#!" class="active">КАТАЛОГ</a>
+				<ul class="pushy-submenu">
+					<li><a href="checkout.html">Скидки</a></li>
+					<li><a href="cabinet.html">Лицо</a></li>
+					<li><a href="#">Новинки</a></li>
+					<li><a href="#">Волосы</a></li>
+					<li><a href="#">Бестселлеры</a></li>
+					<li><a href="#">Тело</a></li>
+					<li><a href="#">Наборы</a></li>
+					<li><a href="#">Комплексы</a></li>
+					<li><a href="#">Акции</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="#!">СЕРИИ NIO</a>
+				<ul class="pushy-submenu">
+					<li><a href="#">Скидки</a></li>
+					<li><a href="#">Лицо</a></li>
+					<li><a href="#">Новинки</a></li>
+					<li><a href="#">Волосы</a></li>
+					<li><a href="#">Бестселлеры</a></li>
+					<li><a href="#">Тело</a></li>
+					<li><a href="#">Наборы</a></li>
+					<li><a href="#">Комплексы</a></li>
+					<li><a href="#">Акции</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="#!">ПОКУПАТЕЛЮ</a>
+				<ul class="pushy-submenu">
+					<li><a href="#">Скидки</a></li>
+					<li><a href="#">Лицо</a></li>
+					<li><a href="#">Новинки</a></li>
+					<li><a href="#">Волосы</a></li>
+					<li><a href="#">Бестселлеры</a></li>
+					<li><a href="#">Тело</a></li>
+					<li><a href="#">Наборы</a></li>
+					<li><a href="#">Комплексы</a></li>
+					<li><a href="#">Акции</a></li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+	<div class="site-overlay"><i class="close-ico"></i></div>
+
+	<div id="delivery-popup" class="zoom-anim-dialog mfp-hide popup delivery-popup">
+		<h3 class="popup-title-red">Бесплатная доставка при заказе товаров на сумму от <nobr>5 000 ₽</nobr></h3>
+		<div class="entry">
+			<div class="columns">
+				<div class="column">
+					<p><strong>Курьер NIO CITY</strong></p>
+					<p>Доставка осуществляется курьером NIO CITY. Вы можете оплатить заказ курьеру наличным или безналичным способом. Стоимость доставки — от 650 рублей.</p>
+				</div>
+				<div class="column">
+					<p><strong>СДЭК</strong></p>
+					<p>Сроки и стоимость доставки зависят от выбранного населенного пункта. Заказ можно отследить по трек-коду.</p>
+				</div>
+				<div class="column">
+					<p><strong>ОНЛАЙН-ОПЛАТА</strong></p>
+					<p>Оплачивайте ваш заказ онлайн. Мы принимаем: Visa, MasterCard, МИР, Apple pay, Google pay</p>
+					<div class="payment-icons">
+						<img src="img/icons/visa.png" alt=""/>
+						<img src="img/icons/mastercard.png" alt=""/>
+						<img src="img/icons/mir.png" alt=""/>
+						<img src="img/icons/applepay.png" alt=""/>
+						<img src="img/icons/googlepay.png" alt=""/>
+					</div>
+				</div>
+				<div class="column">
+					<p><strong>НАЛИЧНЫМИ ИЛи картой</strong></p>
+					<p>Оплата заказа курьеру при получении возможна как банковской картой, так и наличными</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="share-popup" class="zoom-anim-dialog mfp-hide popup share-popup">
+		<div class="soc-links">
+			<h3>Поделиться:</h3>
+			<a href="#"><img src="img/icons/insta_ico.svg" alt=""/></a>
+			<a href="#"><img src="img/icons/vk_ico.svg" alt=""/></a>
+			<a href="#"><img src="img/icons/fb_ico.svg" alt=""/></a>
+			<a href="#"><img src="img/icons/mail_ico.svg" alt=""/></a>
+		</div>
+	</div>
+	<div id="testimonial-popup-no-reg" class="zoom-anim-dialog mfp-hide popup testimonial-popup">
+		<div class="entry flex flex-center">
+			<h2 class="popup-title">Зарегистрируйтесь, чтобы оставить отзыв</h2>
+			<p>Создайте аккаунт, получайте бонусные баллы и тратьте их на будущие покупки</p>
+			<div class="spacerX4"></div>
+			<a href="#" class="btn btn--redborder">Создать аккаунт</a>
+		</div>
+	</div>
+	<div id="testimonial-popup-reg" class="zoom-anim-dialog mfp-hide popup testimonial-popup">
+		<div class="flex flex-center">
+			<form action="" class="form js-form-validate">
+				<p>Поставьте оценку</p>
+				<div id="rating"></div>
+				<textarea name="mes" rows="10" placeholder="Расскажите, почему вам понравился продукт"></textarea>
+				<input type="hidden" value="Поставьте оценку">
+				<button type="submit" class="btn btn--redborder">Оставить отзыв</button>
+			</form>
+			<div class="form-success js-form-success">
+				<h2 class="popup-title">Спасибо за отзыв!</h2>
+				<p>Мы опубликуем его в<br> ближайшее время</p>
+			</div>
+		</div>
+	</div>
+	<div id="callback-popup" class="zoom-anim-dialog mfp-hide popup callback-popup">
+		<div class="flex flex-center">
+			<h2 class="popup-title ttu darkcolor">Обратный звонок</h2>
+			<form action="" class="form js-form-validate">
+				<div class="form-column">
+					<div class="element">
+						<p>Имя</p>
+						<input type="text" name="name">
+					</div>
+					<div class="element">
+						<p>Телефон</p>
+						<input type="text" name="phone" class="phone">
+					</div>
+					<button type="submit" class="btn btn--redborder">Перезвоните мне</button>
+					<div class="element checkbox confirm">
+						<label>
+							<input type="checkbox" name="confirm" checked><i></i>
+							<span>Согласие на обработку персональных данных</span>
+						</label>
+					</div>
+				</div>
+			</form>
+			<div class="form-success js-form-success">
+				<h2 class="popup-title">Заявка отправлена!</h2>
+				<p>Команда NIO CITY свяжется с вами в ближайшее время</p>
+			</div>
+		</div>
+	</div>
+	
+	<script src="js/libs.min.js"></script>
+	<script src="js/common.js"></script>
+</body>
+</html>
